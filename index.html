@@ -174,8 +174,28 @@
 
 		.text-gradient-500{
 		    background-image: linear-gradient(to bottom right,#cafe00,#22c55e);
-		    -webkit-background-clip: text;
 		    color: transparent;
+		}
+
+		.button-navbar{
+			background-image: linear-gradient(to top right,rgb(24 24 27/1),rgb(34 34 34/0));
+		}
+
+		.button-navbar.active{
+			background-image: linear-gradient(to top right,#22c55e,#cafe00);
+			color: #000000;
+		}
+
+		.button-navbar span{
+			font-size: .75rem;
+			line-height: 1rem;
+		}
+
+		.mt-1{
+			margin-top: .25rem;
+		}
+		.mt-0{
+			margin-top: 0;
 		}
 
 		@media (min-width: 768px) {
@@ -214,14 +234,6 @@
 						<h3 class="m-0 color-accent">10+</h3>
 						<p class="mt-2 color-accent mb-0">Projects Completed</p>
 					</div>
-<!-- 					<div class="p-2">
-						<h3 class="m-0 color-accent">4+</h3>
-						<p class="mt-2 color-accent mb-0">Work Experience</p>
-					</div> -->
-<!-- 					<div class="p-2">
-						<h3 class="m-0 color-accent">6+</h3>
-						<p class="mt-2 color-accent mb-0">Work Experience</p>
-					</div> --> 
 				</div>
 				<div style="background-image: linear-gradient(to right,#3b82f6,#22c55e,#cafe00); height: 1px;"></div>
 				<div class="bg-working">
@@ -244,28 +256,6 @@
 				</div>
 			</div>
 		</div>
-		<style type="text/css">
-			.button-navbar{
-				background-image: linear-gradient(to top right,rgb(24 24 27/1),rgb(34 34 34/0));
-			}
-
-			.button-navbar.active{
-			    background-image: linear-gradient(to top right,#22c55e,#cafe00);
-			    color: #000000;
-			}
-
-			.button-navbar span{
-				font-size: .75rem;
-				line-height: 1rem;
-			}
-
-			.mt-1{
-				margin-top: .25rem;
-			}
-			.mt-0{
-				margin-top: 0;
-			}
-		</style>
 		<div class="card-navbar" style="height: 4rem; width: 100%; background-image: linear-gradient(to right,#27272a,#27272a); position: fixed; bottom: 0;z-index: 11;">
 			<div class="grid grid-4 text-center">
 				<div class="h-4 inline-flex justify-content-center flex-direction-column button-navbar active">
