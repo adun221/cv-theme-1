@@ -71,8 +71,22 @@
 			background : var(--bg-contrainer);
 		} */
 
+		.bg-black{
+			background-color: #000000;
+		} 
+
+		.bg-white{
+			background-color: #FFF;
+			color: #000;
+		} 
+
 		.padding-content {
 			padding: 2.5rem 0;
+			background : linear-gradient(10deg, rgba(24,24,27,1) 0%, rgba(29,29,32,1) 50%, rgba(38,38,41,1) 100%);
+		}
+
+		.padding-content-f {
+			padding: 0;
 			background : linear-gradient(10deg, rgba(24,24,27,1) 0%, rgba(29,29,32,1) 50%, rgba(38,38,41,1) 100%);
 		}
 
@@ -86,6 +100,14 @@
 
 		.relative{
 			position: relative;
+		}
+
+		.absolute{
+			position: absolute;
+		}
+
+		.z-10{
+			z-index: 10;
 		}
 
 		.divboxnama{
@@ -152,10 +174,26 @@
 		    margin-bottom: 0;
 		}
 
+		.mb-16 {
+		    margin-bottom: 4rem;
+		}
+
+		.mx-2{
+			margin: .5rem 0;
+		}
+
+		.w-full{
+			width: 100%;
+		}
+
 		.color-accent{
 			color: rgb(59 130 246/1);
 		}
 		p.color-accent{
+			color: rgb(212 212 216/1);
+		}
+
+		.sc-color-primary{
 			color: rgb(212 212 216/1);
 		}
 
@@ -164,6 +202,7 @@
 		    line-height: 2.25rem;
 		    font-weight: 700;
 		    letter-spacing: -.025em;
+			margin-block-start: 0em;
 		}
 
 		p {
@@ -187,6 +226,10 @@
 			padding-bottom: 3.5rem;
 		}
 
+		.inline{
+			display: inline;
+		}
+
 		.flex{
 			display: flex;
 		}
@@ -197,6 +240,10 @@
 
 		.justify-content-center{
 			justify-content: center;
+		}
+
+		.justify-content-sb{
+			justify-content: space-between;
 		}
 
 		.align-items-center{
@@ -231,6 +278,14 @@
 			height: 4rem;
 		}
 
+		.h-10{
+			height: 2rem;
+		}
+
+		.h-24{
+			height: 6rem;
+		}
+
 		.w-4{
 			width: 4rem;
 		}
@@ -256,11 +311,18 @@
 			line-height: 1rem;
 		}
 
+		.bold{
+			font-weight: bold;
+		}
 		.mt-1{
 			margin-top: .25rem;
 		}
 		.mt-0{
 			margin-top: 0;
+		}
+
+		.ml-4{
+			margin-left: 1rem;
 		}
 
 		#bid-work{
@@ -305,6 +367,10 @@
 			.p-10 {
 				padding: 2.5rem;
 			}
+
+			.p-5 {
+				padding: 1.5rem;
+			}
 		}
 
 		@media (min-width: 500px) {
@@ -336,6 +402,17 @@
 			.padding-content {
 				padding: 2.5rem 2.5rem;
 				margin-right: 4rem;
+			}
+			.padding-content-f{
+				margin-right: 4rem;
+			}
+
+			.flex-direction-row{
+				flex-direction: row;
+			}
+
+			.h-auto{
+				height: auto !important;
 			}
 
 		    .card-navbar{
@@ -375,6 +452,11 @@
 
 			.flex-basis-2{
 				flex-basis: calc(66.66%);
+			}
+
+			.about-name{
+				font-size: 1.6rem;
+				margin-block-end: 0;
 			}
 			
 		}
